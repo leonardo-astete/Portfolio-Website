@@ -52,3 +52,33 @@ h3 {
   flex-direction: column;
   gap: 8px;
 }
+
+#projects li {
+  font-size: 18px;
+}
+
+.about-me-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 20px;
+}
+
+.about-me-description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-me-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-photo img {
+  width: 500px;
+  height: 500px;
+  border-radius: 4%;
+  object-fit: cover;
+}
