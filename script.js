@@ -5,7 +5,8 @@ const startDate = new Date(2025, 11, 1, 0, 0, 0);
 const themeMode = document.getElementById("theme-mode");
 //Variable para el icono
 const iconThemeMode = document.querySelector(".icon-theme-mode");
-
+//
+const timeContainer = document.getElementById("time-container");
 // ========== CONTADOR DE TIEMPO ==========
 function updateCounter() {
   const now = new Date();
@@ -16,14 +17,14 @@ function updateCounter() {
   const formattedSeconds = diffInSeconds.toLocaleString("de-DE");
 
   // Actualizar el span con id "time-container"
-  document.getElementById("time-container").textContent = formattedSeconds;
+  timeContainer.textContent = formattedSeconds;
 }
 
 // Actualizar inmediatamente
-updateCounter();
-
-// Actualizar cada segundo
-setInterval(updateCounter, 1000);
+if (timeContainer) {
+  updateCounter();
+  setInterval(updateCounter, 1000);
+}
 
 //theme-mode
 themeMode.addEventListener("click", () => {
