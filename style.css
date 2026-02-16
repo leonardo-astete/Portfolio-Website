@@ -116,6 +116,12 @@ h3 {
   object-fit: cover;
 }
 
+.contact-info a {
+  color: #000;
+  font-size: 30px;
+  text-decoration: none;
+}
+
 #time-container {
   font-size: 24px;
   font-weight: 600;
@@ -132,6 +138,11 @@ body.dark-mode li,
 body.dark-mode li a,
 body.dark-mode #time-container {
   color: #ffffff;
+}
+
+body.dark-mode .contact-info a {
+  color: #ffffff;
+  font-size: 30px;
 }
 
 /* Responsive styles */
