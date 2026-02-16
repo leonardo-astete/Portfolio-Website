@@ -8,8 +8,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 20px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -18,19 +20,26 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 ul {
   display: flex;
   list-style: none;
   gap: 20px;
+  align-items: center;
 }
 
 li {
   font-size: 16px;
   color: #323232;
   font-weight: 600;
+}
+
+li a {
+  color: #323232;
+  font-size: 24px;
+  text-decoration: none;
 }
 
 h2 {
@@ -47,10 +56,18 @@ h3 {
   gap: 18px;
 }
 
+#projects {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
 #projects ul {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  align-items: flex-start;
 }
 
 #projects li {
@@ -87,4 +104,28 @@ h3 {
   font-size: 24px;
   font-weight: 600;
   color: #323232;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode li,
+body.dark-mode li a,
+body.dark-mode #time-container {
+  color: #ffffff;
+}
+
+/* Responsive styles */
+@media (max-width: 1000px) {
+  #about-me {
+    flex-direction: column;
+  }
+
+  .about-me-photo img {
+    width: 100%;
+    height: auto;
+  }
 }
