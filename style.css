@@ -15,6 +15,14 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  padding: 40px 0;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -48,6 +56,14 @@ h2 {
 
 h3 {
   font-size: 18px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+  align-items: flex-start;
 }
 
 #about-me {
