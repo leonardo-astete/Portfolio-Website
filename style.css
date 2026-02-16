@@ -82,3 +82,9 @@ h3 {
   border-radius: 4%;
   object-fit: cover;
 }
+
+#time-container {
+  font-size: 24px;
+  font-weight: 600;
+  color: #323232;
+}
